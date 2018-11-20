@@ -1,0 +1,15 @@
+if TARGET_NUC970_POS
+
+config SYS_BOARD
+	default "nuc970-pos"
+
+config SYS_VENDOR
+	default "nuvoton"
+
+config SYS_SOC
+	default "nuc97"
+
+config SYS_CONFIG_NAME
+	default "nuc970_pos"
+
+endif

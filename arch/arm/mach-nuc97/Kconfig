@@ -1,0 +1,21 @@
+if ARCH_NUC97
+
+config NUC970
+	bool
+	default y
+	
+choice
+	prompt "NUC970 board select"
+	optional
+	
+config TARGET_NUC970_POS
+	bool "Support Nuc970-pos"
+	select BOARD_LATE_INIT
+	select BOARD_EARLY_INIT_F
+	select CREATE_ARCH_SYMLINK
+	
+endchoice
+
+source "board/nuvoton/nuc970-pos/Kconfig"
+
+endif
